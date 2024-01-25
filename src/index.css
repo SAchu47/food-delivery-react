@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --COLOR-BLACK: hsl(252, 30%, 10%);
+  --COLOR-DANGER: hsl(0, 95%, 65%);
+  --COLOR-DARK: hsl(252, 30%, var(--DARK-COLOR-LIGHTNESS));
+  --COLOR-GRAY: hsl(var(--PRIMARY-COLOR-HUE), 15%, 65%);
+  --COLOR-LIGHT: hsl(252, 30%, var(--LIGHT-COLOR-LIGTHNESS));
+  --COLOR-PRIMARY: hsl(var(--PRIMARY-COLOR-HUE), 75%, 60%);
+  --COLOR-SECONDARY: hsl(252, 100%, 90%);
+  --COLOR-SUCCESS: hsl(132, 95%, 65%);
+  --COLOR-WHITE: hsl(252, 30%, var(--WHITE-COLOR-LIGTHNESS));
+  --DARK-COLOR-LIGHTNESS: 17%;
+  --LIGHT-COLOR-LIGTHNESS: 95%;
+  --PRIMARY-COLOR-HUE: 252;
+  --TEXT-COLOR: black;
+  --WHITE-COLOR-LIGTHNESS: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: var(--COLOR-LIGHT);
+  color: var(--TEXT-COLOR);
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 57px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.btn-text {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+}
+
+.mobile-menu {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 45px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+}
+
+li {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+
+.links {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}

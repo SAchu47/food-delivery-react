@@ -1,0 +1,48 @@
+.hero__main {
+  position: relative;
+}
+
+.hero_main__content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+
+.hero_main__content h4 {
+  width: 45%;
+}
+
+.hero_main__content button {
+  display: flex;
+  padding: 15px 40px;
+  flex-direction: column;
+  align-items: center;
+  background: #23a6f0;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__main {
+    height: 638px;
+  }
+
+  .hero_main__image {
+    height: 100%;
+  }
+
+  .hero_main__image img {
+    object-fit: cover;
+  }
+
+  .hero_main__content h4 {
+    width: 80%;
+  }
+}
