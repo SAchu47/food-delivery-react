@@ -9,6 +9,13 @@
   padding: 40px 0;
 }
 
+.category_style_two_right__main {
+  display: flex;
+  width: 1084px;
+  padding: 40px 0;
+  flex-direction: row-reverse;
+}
+
 .category_style_two__main__products {
   display: flex;
   padding: 0 50px;
@@ -70,6 +77,12 @@
 
 @media screen and (max-width: 768px) {
   .category_style_two__main {
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+  }
+
+  .category_style_two_right__main {
     flex-direction: column;
     width: 350px;
     align-items: center;

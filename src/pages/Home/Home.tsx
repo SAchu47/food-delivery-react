@@ -1,6 +1,11 @@
 import React, { FC, ReactElement } from 'react';
 import './Home.css';
-import { CategoryStyleOne, CategoryStyleTwo, Hero } from '../../components';
+import {
+  CategoryStyleOne,
+  CategoryStyleTwo,
+  Hero,
+  MediaWithProduct,
+} from '../../components';
 
 const heroData = {
   heading: 'GROCERIES DELIVERED',
@@ -34,7 +39,7 @@ const categoryStyleOneData = [
   },
 ];
 
-const categoryStyleTwoData = {
+const categoryStyleTwoData1 = {
   products: [
     {
       imageUrl: 'product1.png',
@@ -81,6 +86,83 @@ const categoryStyleTwoData = {
   ],
   categoryNames: ['Fruits', 'Vegetables', 'Meat'],
   heading: 'Most Selling',
+  imageUrl: 'categoryStyleTwoHero1.jpg',
+  isImageLeftAligned: true,
+};
+
+const categoryStyleTwoData2 = {
+  products: [
+    {
+      imageUrl: 'product1.png',
+      categoryName: 'Ice Cream',
+      productName: 'Ice',
+      price: '250',
+      discountPrice: '220',
+    },
+    {
+      imageUrl: 'product2.png',
+      categoryName: 'Fruits',
+      productName: 'Apple',
+      price: '250',
+      discountPrice: '220',
+    },
+    {
+      imageUrl: 'product3.png',
+      categoryName: 'Meat',
+      productName: 'Chicken',
+      price: '250',
+      discountPrice: '220',
+    },
+    {
+      imageUrl: 'product3.png',
+      categoryName: 'Ice Cream',
+      productName: 'Ice',
+      price: '250',
+      discountPrice: '220',
+    },
+    {
+      imageUrl: 'product1.png',
+      categoryName: 'Fruits',
+      productName: 'Apple',
+      price: '250',
+      discountPrice: '220',
+    },
+    {
+      imageUrl: 'product2.png',
+      categoryName: 'Meat',
+      productName: 'Chicken',
+      price: '250',
+      discountPrice: '220',
+    },
+  ],
+  categoryNames: ['Fruits', 'Vegetables', 'Meat'],
+  heading: 'Most Selling',
+  imageUrl: 'categoryStyleTwoHero2.jpg',
+  isImageLeftAligned: false,
+};
+
+const mediaWithProductData1 = {
+  heading: 'MOST POPULAR',
+  discription:
+    " We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+  imageUrl: 'media.png',
+  productName: 'Meat',
+  price: '250',
+  discountPrice: '230',
+  productImageUrl: 'mediaProduct1.png',
+  isImageLeftAligned: true,
+};
+
+const mediaWithProductData2 = {
+  heading: 'MOST POPULAR',
+  discription:
+    " We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+  imageUrl: 'media2.png',
+  productName: 'Meat',
+  price: '250',
+  discountPrice: '230',
+  productImageUrl: 'mediaProduct2.png',
+  isImageLeftAligned: false,
 };
 
 const Home: FC = (): ReactElement => {
@@ -88,7 +170,11 @@ const Home: FC = (): ReactElement => {
     <div className="home__main">
       <Hero {...heroData} />
       <CategoryStyleOne products={categoryStyleOneData} />
-      <CategoryStyleTwo {...categoryStyleTwoData} />
+      <CategoryStyleTwo {...categoryStyleTwoData1} />
+      <MediaWithProduct {...mediaWithProductData1} />
+      <CategoryStyleTwo {...categoryStyleTwoData2} />
+      <CategoryStyleOne products={categoryStyleOneData} />
+      <MediaWithProduct {...mediaWithProductData2} />
     </div>
   );
 };

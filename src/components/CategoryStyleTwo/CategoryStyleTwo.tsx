@@ -13,6 +13,8 @@ interface ICategoryStyleTwo {
   products: ICategoryStyleTwoProduct[];
   categoryNames: string[];
   heading: string;
+  imageUrl: string;
+  isImageLeftAligned: boolean;
 }
 
 const ProductComponent: FC<ICategoryStyleTwoProduct> = (
@@ -37,9 +39,15 @@ const ProductComponent: FC<ICategoryStyleTwoProduct> = (
 
 const CategoryStyleTwo: FC<ICategoryStyleTwo> = (props): ReactElement => {
   return (
-    <div className="category_style_two__main">
+    <div
+      className={
+        props.isImageLeftAligned
+          ? 'category_style_two__main'
+          : 'category_style_two_right__main'
+      }
+    >
       <div className="category_style_two__main__image">
-        <img src="categoryStyleTwoHero1.jpg" alt="" />
+        <img src={props.imageUrl} alt="" />
       </div>
       <div className="category_style_two__main__products">
         <div className="main__products__carousel">

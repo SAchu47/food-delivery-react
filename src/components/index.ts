@@ -2,6 +2,7 @@ import CategoryStyleOne from "./CategoryStyleOne/CategoryStyleOne";
 import CategoryStyleTwo from "./CategoryStyleTwo/CategoryStyleTwo";
 import Footer from "./Footer/Footer";
 import Hero from "./Hero/Hero";
+import MediaWithProduct from "./MediaWithProduct/MediaWithProduct";
 import Navbar from "./Navbar/Navbar";
 
 export {
@@ -9,5 +10,6 @@ export {
     Footer,
     Hero,
     CategoryStyleOne,
-    CategoryStyleTwo
+    CategoryStyleTwo,
+    MediaWithProduct
 }
