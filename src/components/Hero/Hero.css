@@ -32,6 +32,7 @@
 @media screen and (max-width: 768px) {
   .hero__main {
     height: 638px;
+    width: auto;
   }
 
   .hero_main__image {

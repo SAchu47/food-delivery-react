@@ -57,11 +57,13 @@
   .media_with_product__main {
     flex-direction: column;
     gap: 20px;
+    width: auto;
   }
 
   .media_with_product_right__main {
     flex-direction: column;
     gap: 20px;
+    width: auto;
   }
 
   .media_with_product__main__media {

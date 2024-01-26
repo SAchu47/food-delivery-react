@@ -82,6 +82,7 @@
     align-items: flex-start;
     justify-content: center;
     height: auto;
+    width: auto;
     padding: 0px 8px;
     gap: 10px;
   }
