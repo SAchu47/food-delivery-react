@@ -1,0 +1,28 @@
+.category__product {
+  width: 332px;
+  height: 231px;
+  position: relative;
+}
+
+.category_product__main {
+  padding: 80px 0 40px 0;
+  width: 1084px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category_product__content {
+  position: absolute;
+  left: 27px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .category_product__main {
+    flex-direction: column;
+  }
+}
